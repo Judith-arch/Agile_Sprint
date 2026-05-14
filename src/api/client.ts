@@ -1,6 +1,6 @@
 import type { Task, CreateTaskInput, UpdateTaskInput, ApiResponse } from '../types/task';
 
-const BASE_URL = 'http://localhost:3000/api/v1/tasks';
+const BASE_URL = 'https://giving-bravery-production-ead6.up.railway.app/api/v1/tasks';
 
 export const getTasks = async (): Promise<Task[]> => {
   const res = await fetch(BASE_URL);
