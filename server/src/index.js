@@ -5,7 +5,9 @@ const taskRoutes = require('./routes/task.routes');
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: '*'
+}));
 app.use(express.json());
 
 const logger = (req, res, next) => {
